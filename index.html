@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="calendar.js"></script>
+</head>
+
+<body onload="Render_code()">
+    <div class="container">
+        <div class="calendar">
+            <div class="months">
+                <div class="prev_btn" onclick="move_Month('prev')">
+                    <span>&#10094</span>
+                </div>
+
+                <div>
+                    <h2 id="month_name">MARCH</h2>
+                    <p id="date_mon_yr"></p>
+
+                </div>
+                <div class="next_btn" onclick="move_Month('next')">
+                    <span>&#10095</span>
+                </div>
+            </div>
+
+
+            <div class="weeks">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
