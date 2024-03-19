@@ -12,10 +12,11 @@
     align-items: center;
 }
 .calendar{
- width:500px;
+   
+    width:500px;
    background-color: white;
     cursor: pointer;
-     overflow: auto;
+   border: 2px solid green;
 }
 .months{
     width:100%;
@@ -41,6 +42,7 @@
     text-align: center;
     padding: 10px;
     color: white;
+   
 }
 
 .weeks div:hover{
@@ -83,5 +85,21 @@
     align-items: center;
     color: black;
 }
+@media (min-width: 250px) and (max-width: 380px) {
+    .calendar {
+      max-width: 100%; 
+      border-radius: 0px;
+      padding: 0px;
+    }
 
-
+    .weeks{
+        display: flex;
+        border: 2px solid transparent;
+        justify-content: space-between ;
+        background-color:teal;
+        
+        padding: 0px;
+        color: white;
+       
+    }
+}
